@@ -1,0 +1,9 @@
+.barbell__container {
+  position: relative;
+}
+
+.barbellsvg {
+  width: 200px;
+  height: 100px;
+  margin-top: 1rem;
+}
