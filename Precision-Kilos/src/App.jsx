@@ -1,11 +1,12 @@
 import "./App.css";
+import Barbell from "./components/Barbell/Barbell";
 import Navbar from "./components/Navbar/Navbar";
 
 function App() {
   return (
     <div className="App">
       <Navbar />
-      <h1>Hello</h1>
+      <Barbell />
     </div>
   );
 }

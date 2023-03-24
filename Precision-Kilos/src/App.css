@@ -8,9 +8,12 @@
 
 :root {
   --red: #ff0303;
-  --white: #fff;
+  --white: #f2f2f2;
+  --black: #000;
 }
 
 body {
   font-family: "Kanit", sans-serif;
+  background-color: var(--black);
+  color: var(--white);
 }
