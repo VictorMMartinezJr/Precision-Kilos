@@ -1,0 +1,80 @@
+[
+  {
+    "id": 1,
+    "BGColor": "#434242",
+    "kiloNumber": 50,
+    "kilosToAdd": 100
+  },
+  {
+    "id": 2,
+    "BGColor": "#ff0303",
+    "kiloNumber": 25,
+    "kilosToAdd": 50
+  },
+  {
+    "id": 3,
+    "BGColor": "#2F58CD",
+    "kiloNumber": 20,
+    "kilosToAdd": 40
+  },
+  {
+    "id": 4,
+    "BGColor": "#FFC93C",
+    "kiloNumber": 15,
+    "kilosToAdd": 30
+  },
+  {
+    "id": 5,
+    "BGColor": "#54B435",
+    "kiloNumber": 10,
+    "kilosToAdd": 20
+  },
+  {
+    "id": 6,
+    "BGColor": "#fff",
+    "kiloNumber": 5,
+    "kilosToAdd": 10
+  },
+  {
+    "id": 7,
+    "BGColor": "#434242",
+    "kiloNumber": 2.5,
+    "kilosToAdd": 5
+  },
+  {
+    "id": 8,
+    "BGColor": "#2F58CD",
+    "kiloNumber": 2,
+    "kilosToAdd": 4
+  },
+  {
+    "id": 9,
+    "BGColor": "#FFC93C",
+    "kiloNumber": 1.5,
+    "kilosToAdd": 3
+  },
+  {
+    "id": 10,
+    "BGColor": "#B2B2B2",
+    "kiloNumber": 1.25,
+    "kilosToAdd": 2.5
+  },
+  {
+    "id": 11,
+    "BGColor": "#54B435",
+    "kiloNumber": 1,
+    "kilosToAdd": 2
+  },
+  {
+    "id": 12,
+    "BGColor": "#B2B2B2",
+    "kiloNumber": 0.5,
+    "kilosToAdd": 1
+  },
+  {
+    "id": 13,
+    "BGColor": "#fff",
+    "kiloNumber": 0.25,
+    "kilosToAdd": 0.5
+  }
+]
