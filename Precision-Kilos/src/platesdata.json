@@ -3,78 +3,104 @@
     "id": 1,
     "BGColor": "#434242",
     "kiloNumber": 50,
-    "kilosToAdd": 100
+    "kilosToAdd": 100,
+    "height": "100%",
+    "width": "9px"
   },
   {
     "id": 2,
     "BGColor": "#ff0303",
     "kiloNumber": 25,
-    "kilosToAdd": 50
+    "kilosToAdd": 50,
+    "height": "100%",
+    "width": "9px"
   },
   {
     "id": 3,
     "BGColor": "#2F58CD",
     "kiloNumber": 20,
-    "kilosToAdd": 40
+    "kilosToAdd": 40,
+    "height": "100%",
+    "width": "9px"
   },
   {
     "id": 4,
     "BGColor": "#FFC93C",
     "kiloNumber": 15,
-    "kilosToAdd": 30
+    "kilosToAdd": 30,
+    "height": "90%",
+    "width": "5px"
   },
   {
     "id": 5,
     "BGColor": "#54B435",
     "kiloNumber": 10,
-    "kilosToAdd": 20
+    "kilosToAdd": 20,
+    "height": "80%",
+    "width": "5px"
   },
   {
     "id": 6,
     "BGColor": "#fff",
     "kiloNumber": 5,
-    "kilosToAdd": 10
+    "kilosToAdd": 10,
+    "height": "60%",
+    "width": "5px"
   },
   {
     "id": 7,
     "BGColor": "#434242",
     "kiloNumber": 2.5,
-    "kilosToAdd": 5
+    "kilosToAdd": 5,
+    "height": "50%",
+    "width": "3px"
   },
   {
     "id": 8,
     "BGColor": "#2F58CD",
     "kiloNumber": 2,
-    "kilosToAdd": 4
+    "kilosToAdd": 4,
+    "height": "40%",
+    "width": "2px"
   },
   {
     "id": 9,
     "BGColor": "#FFC93C",
     "kiloNumber": 1.5,
-    "kilosToAdd": 3
+    "kilosToAdd": 3,
+    "height": "40%",
+    "width": "2px"
   },
   {
     "id": 10,
     "BGColor": "#B2B2B2",
     "kiloNumber": 1.25,
-    "kilosToAdd": 2.5
+    "kilosToAdd": 2.5,
+    "height": "40%",
+    "width": "2px"
   },
   {
     "id": 11,
     "BGColor": "#54B435",
     "kiloNumber": 1,
-    "kilosToAdd": 2
+    "kilosToAdd": 2,
+    "height": "40%",
+    "width": "2px"
   },
   {
     "id": 12,
     "BGColor": "#B2B2B2",
     "kiloNumber": 0.5,
-    "kilosToAdd": 1
+    "kilosToAdd": 1,
+    "height": "30%",
+    "width": "2px"
   },
   {
     "id": 13,
     "BGColor": "#fff",
     "kiloNumber": 0.25,
-    "kilosToAdd": 0.5
+    "kilosToAdd": 0.5,
+    "height": "30%",
+    "width": "2px"
   }
 ]

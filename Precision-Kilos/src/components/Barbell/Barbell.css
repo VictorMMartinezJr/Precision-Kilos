@@ -1,9 +1,33 @@
 .barbell__container {
   position: relative;
-}
-
-.barbellsvg {
-  width: 200px;
   height: 100px;
   margin-top: 1rem;
+}
+.barbell__img__container {
+  width: 200px;
+  height: 100px;
+  position: relative;
+  display: grid;
+  place-items: center;
+}
+.barbellsvg {
+  width: 200px;
+}
+.kilos__container {
+  width: 140px;
+  height: 100px;
+  top: 0;
+  right: 0;
+  position: absolute;
+}
+.kilos {
+  max-width: fit-content;
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+.kilo {
+  list-style: none;
+  outline: 1px solid var(--black);
+  border-radius: 2px;
 }
