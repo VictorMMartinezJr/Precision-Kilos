@@ -14,17 +14,13 @@ const Plates = () => {
     setPlatesOnBar,
   } = useContext(WeightsContext);
 
-  const addPlatesToBar = (weightToAdd, id, height, width, BGColor) => {
+  const addWeight = (weightToAdd) => {
     let newWeight = weightToAdd * 2.2 + lbWeight;
     setLbWeight(newWeight);
     setKiloWeight(weightToAdd + kiloWeight);
-    setPlatesOnBar([
-      ...platesOnBar,
-      { id: id, height: height, width: width, color: BGColor },
-    ]);
   };
 
-  const removePlatesFromBar = (weightToRemove) => {
+  const subtractWeight = (weightToRemove) => {
     if (lbWeight > 45) {
       let newWeight = Math.round(lbWeight - weightToRemove * 2.2);
       setLbWeight(newWeight);
@@ -33,7 +29,33 @@ const Plates = () => {
     }
   };
 
-  console.log(`lb weight is ${lbWeight}`);
+  const addPlatesToBar = (weightToAdd, id, height, width, BGColor) => {
+    addWeight(weightToAdd);
+    setPlatesOnBar([
+      ...platesOnBar,
+      {
+        id: id,
+        height: height,
+        width: width,
+        color: BGColor,
+        plateNum: platesOnBar.length + 1,
+      },
+    ]);
+  };
+
+  const removePlatesFromBar = (weightToRemove, id) => {
+    const plateToRemove = id;
+    const index = platesOnBar.findLastIndex(
+      (plate) => plate.id === plateToRemove
+    );
+
+    if (index !== -1) {
+      platesOnBar.splice(index, 1);
+      subtractWeight(weightToRemove);
+    } else {
+      return;
+    }
+  };
 
   return (
     <section id="plates__section">
@@ -52,7 +74,7 @@ const Plates = () => {
                 kilo.BGColor
               )
             }
-            removePlate={() => removePlatesFromBar(kilo.kilosToAdd)}
+            removePlate={() => removePlatesFromBar(kilo.kilosToAdd, kilo.id)}
           />
         );
       })}
