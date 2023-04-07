@@ -3,7 +3,21 @@
   justify-content: center;
   align-items: center;
   margin: 2rem 0;
+  position: relative;
+}
+.weight__number {
+  font-size: 2rem;
 }
 .weight__dividericon {
   margin: 0 1rem;
+  font-size: 2rem;
+}
+.weight__maxed {
+  position: absolute;
+  top: 100%;
+  color: red;
+}
+/* hide maxed out text when bar has space */
+.hidden {
+  opacity: 0;
 }
