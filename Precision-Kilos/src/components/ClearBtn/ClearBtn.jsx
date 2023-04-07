@@ -3,7 +3,7 @@ import "./ClearBtn.css";
 import { useContext } from "react";
 
 const ClearBtn = () => {
-  const { setLbWeight, setKiloWeight, setPlatesOnBar } =
+  const { setLbWeight, setKiloWeight, setPlatesOnBar, setSpaceOnBar } =
     useContext(WeightsContext);
 
   const resetWeights = () => {
@@ -11,9 +11,18 @@ const ClearBtn = () => {
     setLbWeight(45);
   };
 
-  const clearBar = () => {
+  const resetSpaceOnBar = () => {
+    setSpaceOnBar(true);
+  };
+
+  const resetBarToEmpty = () => {
     setPlatesOnBar([]);
+  };
+
+  const clearBar = () => {
+    resetBarToEmpty();
     resetWeights();
+    resetSpaceOnBar();
   };
   return (
     <button className="btn__clear" onClick={clearBar}>
