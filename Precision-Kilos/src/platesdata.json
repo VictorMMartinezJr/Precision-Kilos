@@ -4,7 +4,7 @@
     "BGColor": "#434242",
     "kiloNumber": 50,
     "kilosToAdd": 100,
-    "height": "100%",
+    "height": "120%",
     "width": "9px"
   },
   {
@@ -12,23 +12,23 @@
     "BGColor": "#ff0303",
     "kiloNumber": 25,
     "kilosToAdd": 50,
-    "height": "100%",
-    "width": "9px"
+    "height": "120%",
+    "width": "7px"
   },
   {
     "id": 3,
     "BGColor": "#2F58CD",
     "kiloNumber": 20,
     "kilosToAdd": 40,
-    "height": "100%",
-    "width": "9px"
+    "height": "120%",
+    "width": "7px"
   },
   {
     "id": 4,
     "BGColor": "#FFC93C",
     "kiloNumber": 15,
     "kilosToAdd": 30,
-    "height": "90%",
+    "height": "100%",
     "width": "5px"
   },
   {
@@ -36,7 +36,7 @@
     "BGColor": "#54B435",
     "kiloNumber": 10,
     "kilosToAdd": 20,
-    "height": "80%",
+    "height": "90%",
     "width": "5px"
   },
   {
@@ -44,7 +44,7 @@
     "BGColor": "#fff",
     "kiloNumber": 5,
     "kilosToAdd": 10,
-    "height": "60%",
+    "height": "70%",
     "width": "5px"
   },
   {

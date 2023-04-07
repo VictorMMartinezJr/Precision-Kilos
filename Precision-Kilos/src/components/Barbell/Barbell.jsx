@@ -8,6 +8,7 @@ const Barbell = () => {
   const { platesOnBar, setSpaceOnBar } = useContext(WeightsContext);
   const kilosContainer = useRef(null);
   const kilo = useRef(null);
+
   useEffect(() => {
     const barbellWidth = kilo.current.getBoundingClientRect().width;
     const barbellContainerWidth =
