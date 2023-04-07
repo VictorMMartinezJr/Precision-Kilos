@@ -12,17 +12,20 @@ const Plates = () => {
     setKiloWeight,
     platesOnBar,
     setPlatesOnBar,
+    spaceOnBar,
+    setSpaceOnBar,
   } = useContext(WeightsContext);
 
   const addWeight = (weightToAdd) => {
-    let newWeight = weightToAdd * 2.2 + lbWeight;
+    let newWeight = weightToAdd * 2.2046 + lbWeight;
     setLbWeight(newWeight);
     setKiloWeight(weightToAdd + kiloWeight);
   };
 
   const subtractWeight = (weightToRemove) => {
     if (lbWeight > 45) {
-      let newWeight = Math.round(lbWeight - weightToRemove * 2.2);
+      let newWeight = lbWeight - weightToRemove * 2.2;
+      setKiloWeight(kiloWeight - weightToRemove);
       setLbWeight(newWeight);
     } else {
       setLbWeight(45);
@@ -30,17 +33,21 @@ const Plates = () => {
   };
 
   const addPlatesToBar = (weightToAdd, id, height, width, BGColor) => {
-    addWeight(weightToAdd);
-    setPlatesOnBar([
-      ...platesOnBar,
-      {
-        id: id,
-        height: height,
-        width: width,
-        color: BGColor,
-        plateNum: platesOnBar.length + 1,
-      },
-    ]);
+    if (spaceOnBar) {
+      addWeight(weightToAdd);
+      setPlatesOnBar([
+        ...platesOnBar,
+        {
+          id: id,
+          height: height,
+          width: width,
+          color: BGColor,
+          plateNum: platesOnBar.length + 1,
+        },
+      ]);
+    } else {
+      return;
+    }
   };
 
   const removePlatesFromBar = (weightToRemove, id) => {
@@ -55,6 +62,7 @@ const Plates = () => {
     } else {
       return;
     }
+    setSpaceOnBar(true);
   };
 
   return (
