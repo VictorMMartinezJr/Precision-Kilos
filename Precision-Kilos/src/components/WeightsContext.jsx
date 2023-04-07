@@ -6,6 +6,7 @@ export const WeightsProvider = (props) => {
   const [lbWeight, setLbWeight] = useState(45);
   const [kiloWeight, setKiloWeight] = useState(20);
   const [platesOnBar, setPlatesOnBar] = useState([]);
+  const [spaceOnBar, setSpaceOnBar] = useState(true);
   return (
     <WeightsContext.Provider
       value={{
@@ -15,6 +16,8 @@ export const WeightsProvider = (props) => {
         setKiloWeight,
         platesOnBar,
         setPlatesOnBar,
+        spaceOnBar,
+        setSpaceOnBar,
       }}
     >
       {props.children}
