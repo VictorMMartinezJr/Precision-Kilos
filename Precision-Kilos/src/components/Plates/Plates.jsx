@@ -26,7 +26,7 @@ const Plates = () => {
     if (lbWeight > 45) {
       let newWeight = lbWeight - weightToRemove * 2.2;
       setKiloWeight(kiloWeight - weightToRemove);
-      setLbWeight(newWeight);
+      setLbWeight(Math.round(newWeight));
     } else {
       setLbWeight(45);
     }
