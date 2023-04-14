@@ -17,7 +17,7 @@ const Plates = () => {
   } = useContext(WeightsContext);
 
   const addWeight = (weightToAdd) => {
-    let newWeight = weightToAdd * 2.2046 + lbWeight;
+    let newWeight = weightToAdd * 2.2 + lbWeight;
     setLbWeight(newWeight);
     setKiloWeight(weightToAdd + kiloWeight);
   };

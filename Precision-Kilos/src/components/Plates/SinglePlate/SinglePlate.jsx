@@ -1,10 +1,11 @@
+import PlateOutline from "../PlateOutline/PlateOutline";
 import "./SinglePlate.css";
 
 const SinglePlate = ({ BGColor, kiloNumber, addPlate, removePlate }) => {
   return (
     <div
       className="singleplate"
-      style={{ backgroundColor: BGColor, outlineColor: BGColor }}
+      style={{ backgroundColor: BGColor, borderColor: BGColor }}
     >
       <p className="singleplate__shadow">{kiloNumber}</p>
       <div className="singleplate__interactive">
@@ -23,6 +24,7 @@ const SinglePlate = ({ BGColor, kiloNumber, addPlate, removePlate }) => {
         </button>
       </div>
       <p className="singleplate__shadow">KG</p>
+      <PlateOutline borderColor={BGColor} />
     </div>
   );
 };

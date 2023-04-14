@@ -1,0 +1,10 @@
+.plate__outline {
+  position: absolute;
+  top: -6px;
+  right: -6px;
+  bottom: -6px;
+  left: -6px;
+  border: 2px solid;
+  border-radius: 50%;
+  z-index: -1;
+}
