@@ -18,7 +18,7 @@ const Plates = () => {
 
   const addWeight = (weightToAdd) => {
     let newWeight = weightToAdd * 2.2 + lbWeight;
-    setLbWeight(newWeight);
+    setLbWeight(Math.round(newWeight));
     setKiloWeight(weightToAdd + kiloWeight);
   };
 
