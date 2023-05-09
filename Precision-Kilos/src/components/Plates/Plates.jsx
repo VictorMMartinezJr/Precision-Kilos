@@ -22,11 +22,27 @@ const Plates = () => {
     setKiloWeight(weightToAdd + kiloWeight);
   };
 
+  const roundUpChecker = (num) => {
+    let newWeightStr = num.toString();
+    let decimalIndex = newWeightStr.indexOf(".");
+    if (decimalIndex === -1) {
+      console.log("Return");
+      return false;
+    } else if (newWeightStr[decimalIndex + 1] === "5") {
+      return true;
+    }
+    return false;
+  };
+
   const subtractWeight = (weightToRemove) => {
     if (lbWeight > 45) {
       let newWeight = lbWeight - weightToRemove * 2.2;
       setKiloWeight(kiloWeight - weightToRemove);
-      setLbWeight(Math.round(newWeight));
+      if (roundUpChecker(newWeight)) {
+        setLbWeight(Math.floor(newWeight));
+      } else {
+        setLbWeight(Math.round(newWeight));
+      }
     } else {
       setLbWeight(45);
     }
