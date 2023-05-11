@@ -11,3 +11,12 @@
   font-weight: 600;
   margin-right: 1rem;
 }
+
+/* media queries */
+@media screen and (min-width: 768px) {
+  .btn__clear {
+    padding: 1rem 2rem;
+    font-size: 1rem;
+    cursor: pointer;
+  }
+}
