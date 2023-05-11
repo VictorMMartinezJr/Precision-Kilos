@@ -1,6 +1,16 @@
-#plates__section {
+.plates__content {
   display: flex;
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
+}
+
+@media screen and (min-width: 1024px) {
+  #plates__section {
+    display: grid;
+    place-items: center;
+  }
+  .plates__content {
+    width: 790px;
+  }
 }

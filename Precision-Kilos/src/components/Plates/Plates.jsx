@@ -83,25 +83,27 @@ const Plates = () => {
 
   return (
     <section id="plates__section">
-      {kiloPlatesData.map((kilo) => {
-        return (
-          <SinglePlate
-            key={kilo.id}
-            BGColor={kilo.BGColor}
-            kiloNumber={kilo.kiloNumber}
-            addPlate={() =>
-              addPlatesToBar(
-                kilo.kilosToAdd,
-                kilo.id,
-                kilo.height,
-                kilo.width,
-                kilo.BGColor
-              )
-            }
-            removePlate={() => removePlatesFromBar(kilo.kilosToAdd, kilo.id)}
-          />
-        );
-      })}
+      <div className="plates__content">
+        {kiloPlatesData.map((kilo) => {
+          return (
+            <SinglePlate
+              key={kilo.id}
+              BGColor={kilo.BGColor}
+              kiloNumber={kilo.kiloNumber}
+              addPlate={() =>
+                addPlatesToBar(
+                  kilo.kilosToAdd,
+                  kilo.id,
+                  kilo.height,
+                  kilo.width,
+                  kilo.BGColor
+                )
+              }
+              removePlate={() => removePlatesFromBar(kilo.kilosToAdd, kilo.id)}
+            />
+          );
+        })}
+      </div>
     </section>
   );
 };
