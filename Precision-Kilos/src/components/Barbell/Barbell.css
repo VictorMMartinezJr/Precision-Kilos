@@ -31,3 +31,15 @@
   outline: 1px solid var(--black);
   border-radius: 2px;
 }
+/* media queries */
+@media screen and (min-width: 768px) {
+  .barbell__img__container {
+    width: 400px;
+  }
+  .barbellsvg {
+    width: 400px;
+  }
+  .kilos__container {
+    width: 281px;
+  }
+}
